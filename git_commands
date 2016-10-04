@@ -1,0 +1,27 @@
+
+                            HEAD
+                         /        ^
+   git reset -- files   |         |
+                         \         git commit
+                            STAGE
+                         /        ^
+  git checkout -- files |         |
+                         \         git add files
+                         WORKING_DIR
+
+git init
+  - create a new git repository
+git add
+  - propose changes (add this content to the next commit)
+git commit -m "Commit message"
+  - commit changes
+git commit -a
+  - stage every file that is already tracked before doing the commit (no need of git add)
+git rm
+  - remove a file from your staging area and working directory
+git log
+  - view the commit history
+git diff
+  - That command compares your working directory to your staging area. The result tells you the changes you’ve made that you haven’t yet staged.
+git diff --staged
+  - That command compares your staged changes to your last commit
